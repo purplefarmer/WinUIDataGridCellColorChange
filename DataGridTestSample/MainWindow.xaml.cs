@@ -52,7 +52,7 @@ public sealed partial class MainWindow : Window
 			FindChildren<DataGridCell>(cells, rows[rowIndex]);
 		}
 
-		return (columnIndex < rows.Count) ? cells[columnIndex] : null;
+		return (columnIndex < cells.Count) ? cells[columnIndex] : null;
 	}
 
 
