@@ -47,12 +47,12 @@ public sealed partial class MainWindow : Window
 
 		var cells = new List<DataGridCell>();
 
-		if (rowIndex <= rows.Count)
+		if (rowIndex < rows.Count)
 		{
 			FindChildren<DataGridCell>(cells, rows[rowIndex]);
 		}
 
-		return (columnIndex <= rows.Count) ? cells[columnIndex] : null;
+		return (columnIndex < rows.Count) ? cells[columnIndex] : null;
 	}
 
 
